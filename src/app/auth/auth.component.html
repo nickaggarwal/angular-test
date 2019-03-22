@@ -16,6 +16,7 @@
                 formControlName="username"
                 placeholder="Username"
                 class="form-control form-control-lg"
+                id="form-username"
                 type="text"
                 *ngIf="authType == 'register'" />
             </fieldset>
@@ -23,6 +24,7 @@
               <input
                 formControlName="email"
                 placeholder="Email"
+                id="form-email"
                 class="form-control form-control-lg"
                 type="text" />
             </fieldset>
@@ -30,10 +32,11 @@
               <input
                 formControlName="password"
                 placeholder="Password"
+                id="form-password"
                 class="form-control form-control-lg"
                 type="password" />
             </fieldset>
-            <button class="btn btn-lg btn-primary pull-xs-right" [disabled]="!authForm.valid" type="submit">
+            <button class="btn btn-lg btn-primary pull-xs-right" [disabled]="!authForm.valid" type="submit" id="form-submit" >
               {{ title }}
             </button>
           </fieldset>
